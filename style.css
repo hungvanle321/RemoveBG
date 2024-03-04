@@ -44,6 +44,10 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+#changeBackground {
+  visibility: hidden;
+}
+
 .upload-button:hover,
 .upload-submit:hover {
   background-color: darkgoldenrod;
