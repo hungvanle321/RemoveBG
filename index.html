@@ -26,8 +26,8 @@
 
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script>
-    const API_NAME = "Ecodemo";
-    const API_KEY = "JuKtutHEqvgyqiChAv6ya62r";
+    const API_NAME = "NDPSO";
+    const API_KEY = "aK4KaTjRTvKUwNEmm6isMsEp";
     async function handleUpload()
     {
       const fileInput = document.getElementById('imageUpload');
@@ -58,11 +58,10 @@
 
         processedImage.onload = function ()
         {
-
-          var processedImageWidth = backgroundImage.width / 4;
-          var processedImageHeight = (processedImageWidth / processedImage.width) * processedImage.height;
-          var processedImageX = backgroundImage.width / 2 + (backgroundImage.width / 2 - processedImageWidth) / 2;
-          var processedImageY = (backgroundImage.height - processedImageHeight) / 2;
+          var processedImageWidth = 400;
+          var processedImageHeight = 600;
+          var processedImageX = backgroundImage.naturalWidth / 2 + processedImageWidth / 2;
+          var processedImageY = backgroundImage.naturalHeight - processedImageHeight;
 
           const canvas = document.createElement('canvas');
           canvas.width = backgroundImage.naturalWidth;
