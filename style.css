@@ -39,6 +39,12 @@
   z-index: -1;
 }
 
+@media (max-width: 768px) {
+  #background {
+    min-height: 30vh;
+  }
+}
+
 .upload-section {
   position: absolute;
   top: 300px;
